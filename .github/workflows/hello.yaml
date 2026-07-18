@@ -14,8 +14,10 @@ jobs:
         shell: bash
         
   goodbye:
-    - name: step 2
-      if: github.ref == 'test'
-      run: echo "goog by from test"
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step 2
+        if: github.ref == 'test'
+        run: echo "goog by from test"
 
   
