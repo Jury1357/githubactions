@@ -9,8 +9,9 @@ jobs:
   hello_old:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: step 1
-        run: echo "hello world"
+        run: cat readme
         shell: bash
         
   goodbye:
